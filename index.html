@@ -6,8 +6,8 @@
    <!--Creo la conexion con el css y js-->
     <link rel="stylesheet" href="css/style.css">
    
-
-    <script src="js/index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/index.js" defer ></script>
     <title>Portfolio</title>
 </head>
 <!--requerimientos
@@ -62,15 +62,13 @@ Librerías para usar jquery y bootstrap a incorporar en vuestro head:
             <h1><span style="color:#027069;">Víctor Lorenzo Vilas</span></h1>
             <p>BIENVENIDO A MI PORTFOLIO COMO DESARROLLADOR JUNIOR</p>
             <p>Si quieres ponerte en contacto conmigo escríbeme a <span style="color:#027069;">victorlvilas@gmail.com</span></p>
-            <!--Decidir si boton o foto para descarga de CV-->
-            <button>Descarga mi cv</button>
             
             <!--target=_blank para que abra en otra página-->
             <div>
                 <a href="https://github.com/Victorlvilas" target="_blank"><img src="./img/logos/github-verde.png" alt="Github"></a>
                 <a href="https://www.linkedin.com/in/victor-lorenzo-vilas-9a39a8234" target="_blank"><img src="./img/logos/linkedin-verde.png" alt="Linkedin"></a>
                <!--Falta descarga de CV-->
-                <a href="" target="_blank"><img src="./img/logos/CV-verde.png" alt="CV"></a>
+                <a href="./pdf/CV_Victor_Lorenzo_Vilas.pdf" download="CV" target="_blank"><img src="./img/logos/CV-verde.png" alt="CV"></a>
             </div>
 
 </section>
@@ -83,14 +81,21 @@ Librerías para usar jquery y bootstrap a incorporar en vuestro head:
     </div>
     <div id="experiencia-estudios">
     <div id="estudios">
+        <div id="flip1">
         <h2>Estudios</h2>
+    </div>
+    <div id="panel1">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum mollitia aliquam maxime tempora inventore dicta enim, molestias fuga repudiandae repellendus deserunt velit aperiam odio quae dignissimos, non quia. Eveniet.</p>
            </div>
-           
+        </div>
             <div id="experiencia">
+                <div id="flip2">
          <h2>Experiencia</h2>
+        </div>
+        <div id="panel2">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facilis dolorum deserunt, esse velit sunt adipisci doloremque quaerat, voluptate illo alias repellat itaque cupiditate aperiam, repellendus molestiae ut ex architecto!</p>
             </div>
+        </div>
        </div>
        
           
@@ -166,25 +171,25 @@ Librerías para usar jquery y bootstrap a incorporar en vuestro head:
 
 <div class="skillsRow">
 
-<p style="background-color: #5382a1;color:white ;padding: 15px;margin: 10px;"><img src="./img/logos/javaBlanco.png" alt=""> Java</p>  
-<p style="background-color: #f16524;color:white ;padding: 15px;margin: 10px;"><img src="./img/logos/html-5Blanco.png" alt=""> HTML5</p>  
-<p style="background-color: #2465f1;color:white ;padding: 15px;margin: 10px;"><img src="./img/logos/css-3Blanco.png" alt=""> CSS3</p>
-<p style="background-color: #ffde24;color:white ;padding: 15px;margin: 10px;"><img src="./img/logos/jsBlanco.png" alt=""> JavaScript</p>
+<p style="background-color: #5382a1;color:white ;padding: 10px;margin: 10px;"><img src="./img/logos/javaBlanco.png" alt=""> Java</p>  
+<p style="background-color: #f16524;color:white ;padding: 10px;margin: 10px;"><img src="./img/logos/html-5Blanco.png" alt=""> HTML5</p>  
+<p style="background-color: #2465f1;color:white ;padding: 10px;margin: 10px;"><img src="./img/logos/css-3Blanco.png" alt=""> CSS3</p>
+<p style="background-color: #ffde24;color:white ;padding: 10px;margin: 10px;"><img src="./img/logos/jsBlanco.png" alt=""> JavaScript</p>
 
 </div>
 
         <h2>Frameworks</h2>
 
         <div class="skillsRow">
-            <p style="background-color: #7909f7;color: white;padding: 15px;margin: 10px;"><img src="./img/logos/bootstrapBlanco.png" alt=""> Bootstrap</p>
-            <p style="background-color: aqua;padding: 15px;margin: 10px;"><img src="" alt=""> prueba para flex</p>
+            <p style="background-color: #7909f7;color: white;padding: 10px;margin: 10px;"><img src="./img/logos/bootstrapBlanco.png" alt=""> Bootstrap</p>
+            <p style="background-color: aqua;padding: 10px;margin: 10px;"><img src="" alt=""> prueba para flex</p>
         </div>
 
         <h2>Software y herramientas</h2>
 
         <div class="skillsRow">
-            <p style="background-color:#25abf2;color: white;padding: 15px;margin: 10px;"><img src="./img/logos/visual-basicoBlanco.png" alt=""> Visual Studio Code</p>
-            <p style="background-color: aqua;padding: 15px;margin: 10px;"><img src="" alt="">prueba para flex</p>
+            <p style="background-color:#25abf2;color: white;padding: 10px;margin: 10px;"><img src="./img/logos/visual-basicoBlanco.png" alt=""> Visual Studio Code</p>
+            <p style="background-color: aqua;padding: 10px;margin: 10px;"><img src="" alt="">prueba para flex</p>
         </div>
 
         <h2>Estoy aprendiendo</h2>
@@ -200,42 +205,24 @@ Librerías para usar jquery y bootstrap a incorporar en vuestro head:
 <!--Sexta sección con botón de enviar, cuando se realice el
 evento debe aparecer un alert con los datos y un reload de la web a los 2 seg-->
 <section>
-<h1 style="color: #027069;font-size: 80px;">Formulario de contacto</h1>
+    <h1 style="color: #027069;font-size: 80px;">Formulario de contacto</h1>
 <!--el form debe contener nombre, asunto y mensaje-->
     <div id="contacto">
-        
-        <form action="#" method="">       
-
-            
-            <p>
-              <label for="nombre" class="colocar_nombre">Nombre
-                <span class="obligatorio">*</span>
-              </label>
-                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-            </p>
-          
-            <p>
-              <label for="asunto" class="colocar_asunto">Asunto
-                <span class="obligatorio">*</span>
-              </label>
-                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-            </p>    
-          
-            <p>
-              <label for="mensaje" class="colocar_mensaje">Mensaje
-                <span class="obligatorio">*</span>
-              </label>                     
-                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-            </p>                    
-          
-            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-            <p class="aviso">
-              <span class="obligatorio"> * </span>los campos son obligatorios.
-            </p>          
-        
-      </form>
-        
+        <form onsubmit="mostrarDatos(event)">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
         
     </div>
 </section>
@@ -247,16 +234,18 @@ evento debe aparecer un alert con los datos y un reload de la web a los 2 seg-->
 
 
 <footer>
-<!--debe contener redes sociales y politica de cookies-->
-
-<div id="overbox3">
-    <div id="infobox3">
-        <p>Esta web utiliza cookies para obtener datos estadísticos de la navegación de sus usuarios. Si continúas navegando consideramos que aceptas su uso.
-        <a href="politica-privacidad.php">Más información</a>
-        <a onclick="aceptar_cookies();" style="cursor:pointer;">X Cerrar</a></p>
+    <!--debe contener redes sociales y politica de cookies-->
+    
+    <div class="footer-logos">
+        <a href="https://github.com/Victorlvilas" target="_blank"><img src="./img/logos/github-verde.png" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/victor-lorenzo-vilas-9a39a8234" target="_blank"><img src="./img/logos/linkedin-verde.png" alt="Linkedin"></a>
     </div>
-</div>
-</footer>
+    <div class="footer-text">
+        <p>&copy; 2024 Víctor Todos los derechos reservados.</p>
+        <p><a href="politica-cookies.html" target="_blank">Política de Cookies</a></p>
+    </div>
+    
+    </footer>
 
 </body>
 </html>

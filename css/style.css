@@ -29,19 +29,20 @@
     text-align: center;
 }
 
-.main_content{
-     /*movemos el contenido del cuerpo de la pagina para dejar espacio al nav*/
+.main_content {
     margin-left: 180px;
     padding: 0 10px;
  text-align: justify;
- 
-
 }
+
 
 body{
     /*color de fondo y de letra para el cuerpo de la pagina*/
     background-color:#EFFAFD;
     color:#256FD0;
+
+ 
+ 
 }
 #victor img {
     /*tamaño de imagenes de la primera seccion*/
@@ -83,20 +84,50 @@ padding-right: 30px;
 #experiencia-estudios {
     display: flex;
     flex-direction: row;  
+   
 }
 #experiencia-estudios h2{
 font-size: 50px;
-color: #027069;
+color:#EFFAFD;
 }
 #experiencia-estudios p{
 font-size: 20px;
 }
 #estudios {
-    padding-right: 30px;
+    background-color:#027069;
+    color:#EFFAFD;
+    padding: 0px 20px 100px 20px;
+    border: solid 1px #EFFAFD;
+  
 }
 #experiencia{
-    padding-right: 30px;
+    background-color:#027069;
+    color:#EFFAFD;
+    padding: 0px 20px 100px 20px;
+    border: solid 1px #EFFAFD;
 }
+
+#panel1, #flip1 {
+    padding: 5px;
+    text-align: center;
+    
+  }
+  
+  #panel1 {
+    padding: 50px;
+    display: none;
+  }
+
+  #panel2, #flip2 {
+    padding: 5px;
+    text-align: center;
+    
+  }
+  
+  #panel2 {
+    padding: 50px;
+    display: none;
+  }
 /*Posicionamiento de la pagina portfolio*/
 #contenedoresPortfolio{
 display: flex;
@@ -179,6 +210,8 @@ padding-left: 250px;
     100% {margin-left: -300%;}
 }
 
+/*SKILLS*/
+
 .skillsRow {
     display: flex;
     flex-direction: row;
@@ -186,32 +219,35 @@ padding-left: 250px;
 }
 
 .skillsRow  img{
-  width: 20px;
+  width: 15px;
 }
 
 #skills {
-
+   
 h1{
     font-size: 80px; 
-   
+    margin-bottom: 100px;
+   padding-top: 40px;
     color: #027069;
 }
 h2{
     font-size: 40px;
     color: #027069;
+    margin-bottom: 10px;
 }
 p{
     font-size: 18px;
+    
 }
 li{
     font-size: 18px;
+    
 }
 }
 
-
+  /*FORMULARIO*/
   
-  
-  input{
+input{
     background-color: #fbfbfb; 
     width: 408px; 
     height: 40px; 
@@ -259,13 +295,8 @@ li{
     border-radius: 10px;  
     width: 420px;   
     cursor: pointer;
+    color: #EFFAFD; 
   }
-  
-  
-  button p{
-    color: #fff; 
-  }
-  
   
   span{
     color: #027069; 
@@ -302,10 +333,34 @@ li{
     text-align: center;
    }
 
-   footer{
-    margin-left: 180px;
-    padding: 0 10px;
- text-align: justify;
- 
-   }
+   /*FOOTER*/
+   footer {
    
+    color: #256FD0;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+.footer-logos{
+margin-left: 150px;
+}
+
+.footer-logos img {
+    height: 50px;
+    
+}
+.footer-text {
+    flex-grow: 1;
+    text-align: center;
+}
+.footer-text a {
+    color: #027069;
+    text-decoration: none;
+}
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
