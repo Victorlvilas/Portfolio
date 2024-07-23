@@ -1,0 +1,311 @@
+.sidebar__nav img {
+    /*tamaño de imagen menu*/
+    width: 110px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/*todo es para el menú posicionado a la izquierda*/
+.sidebar__nav {
+    /*posicionamiento del nav*/
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #b6e8f6;
+    overflow-x: hidden;
+    padding-top: 200px;
+}
+
+.sidebar__nav a{
+     /*posicionamiento de los links del nav*/
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #027069;
+    display: block;
+    text-align: center;
+}
+
+.main_content{
+     /*movemos el contenido del cuerpo de la pagina para dejar espacio al nav*/
+    margin-left: 180px;
+    padding: 0 10px;
+ text-align: justify;
+ 
+
+}
+
+body{
+    /*color de fondo y de letra para el cuerpo de la pagina*/
+    background-color:#EFFAFD;
+    color:#256FD0;
+}
+#victor img {
+    /*tamaño de imagenes de la primera seccion*/
+    width: 65px;
+    padding-right: 30px;
+}
+/*Posicionamiento del contenido de la primera pagina*/
+#victor h1{
+    font-size: 80px;
+}
+
+#victor p{
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+#victor {
+    padding-top: 150px;
+
+}
+/*separacion de cada una de las secciones*/
+section{
+    padding-top: 400px;
+}
+/*posicionamiento de la pagina Sobre Mi*/
+#sobreMi{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+#sobreMiArriba h1{
+font-size: 80px;
+color: #027069;
+}
+#sobreMiArriba p{
+font-size: 30px;
+padding-right: 30px;
+}
+#experiencia-estudios {
+    display: flex;
+    flex-direction: row;  
+}
+#experiencia-estudios h2{
+font-size: 50px;
+color: #027069;
+}
+#experiencia-estudios p{
+font-size: 20px;
+}
+#estudios {
+    padding-right: 30px;
+}
+#experiencia{
+    padding-right: 30px;
+}
+/*Posicionamiento de la pagina portfolio*/
+#contenedoresPortfolio{
+display: flex;
+flex-direction: row;
+}
+#contenedoresPortfolio img{
+    width: 100%;
+    height: auto;
+
+}
+#contenedorPortfolio1{
+
+border: 3px solid #027069;
+margin-right: 60px;
+
+}
+#contenedorPortfolio2{
+   
+    border: 3px solid #027069;
+    margin-right: 60px;
+}
+#contenedorPortfolio3{
+    
+    border: 3px solid #027069;
+    margin-right: 60px;
+}
+#portfolio h1{
+    font-size: 80px; 
+    padding-top: 150px;
+    color: #027069;
+}
+.divTexto {
+    padding-right: 10px;
+    text-align: justify;
+    padding-left: 8px;
+}
+
+/*hacemos el slider de fotos y lo posicionamos*/
+
+#valores h2{
+    font-size: 80px; 
+    padding-top: 40px;
+    color: #027069;
+}
+#sliderFrame {
+width: 1920px;
+height: auto;
+margin: 50px auto 0;
+overflow: hidden;
+padding-left: 250px;
+}
+#sliderFrame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+#sliderFrame li {
+    list-style: none;
+    width: 100%;
+}
+
+#sliderFrame img {
+    width: 60%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.skillsRow {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.skillsRow  img{
+  width: 20px;
+}
+
+#skills {
+
+h1{
+    font-size: 80px; 
+   
+    color: #027069;
+}
+h2{
+    font-size: 40px;
+    color: #027069;
+}
+p{
+    font-size: 18px;
+}
+li{
+    font-size: 18px;
+}
+}
+
+
+  
+  
+  input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #027069; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #027069; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #027069; 
+    border-color: #027069; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+    color: #fff; 
+  }
+  
+  
+  span{
+    color: #027069; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+
+  ::-webkit-input-placeholder {
+    color: #a8a8a8;
+   }
+   
+   
+   ::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+   }
+   
+   
+   .formulario input:focus{
+     outline:0;
+     border: 1px solid #97d848;
+   }
+   
+   
+   .formulario textarea:focus{
+     outline:0;
+     border: 1px solid #97d848;
+   }
+   
+   #contacto{
+    text-align: center;
+   }
+
+   footer{
+    margin-left: 180px;
+    padding: 0 10px;
+ text-align: justify;
+ 
+   }
+   
