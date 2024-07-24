@@ -1,8 +1,8 @@
 .sidebar__nav img {
     /*tamaño de imagen menu*/
     width: 110px;
-  padding-left: 8px;
-  padding-right: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 /*todo es para el menú posicionado a la izquierda*/
@@ -19,8 +19,8 @@
     padding-top: 200px;
 }
 
-.sidebar__nav a{
-     /*posicionamiento de los links del nav*/
+.sidebar__nav a {
+    /*posicionamiento de los links del nav*/
     padding: 16px;
     text-decoration: none;
     font-size: 20px;
@@ -32,29 +32,31 @@
 .main_content {
     margin-left: 180px;
     padding: 0 10px;
- text-align: justify;
+    text-align: justify;
 }
 
 
-body{
+body {
     /*color de fondo y de letra para el cuerpo de la pagina*/
-    background-color:#EFFAFD;
-    color:#256FD0;
+    background-color: #EFFAFD;
+    color: #256FD0;
 
- 
- 
+
+
 }
+
 #victor img {
     /*tamaño de imagenes de la primera seccion*/
     width: 65px;
     padding-right: 30px;
 }
+
 /*Posicionamiento del contenido de la primera pagina*/
-#victor h1{
+#victor h1 {
     font-size: 80px;
 }
 
-#victor p{
+#victor p {
     font-size: 30px;
     padding-top: 20px;
 }
@@ -63,102 +65,120 @@ body{
     padding-top: 150px;
 
 }
+
 /*separacion de cada una de las secciones*/
-section{
+section {
     padding-top: 400px;
 }
+
 /*posicionamiento de la pagina Sobre Mi*/
-#sobreMi{
+#sobreMi {
     display: flex;
     flex-direction: column;
     padding-top: 80px;
 }
-#sobreMiArriba h1{
-font-size: 80px;
-color: #027069;
+
+#sobreMiArriba h1 {
+    font-size: 80px;
+    color: #027069;
 }
-#sobreMiArriba p{
-font-size: 30px;
-padding-right: 30px;
+
+#sobreMiArriba p {
+    font-size: 30px;
+    padding-right: 30px;
 }
+
 #experiencia-estudios {
     display: flex;
-    flex-direction: row;  
-   
+    flex-direction: row;
+
 }
-#experiencia-estudios h2{
-font-size: 50px;
-color:#EFFAFD;
+
+#experiencia-estudios h2 {
+    font-size: 50px;
+    color: #EFFAFD;
 }
-#experiencia-estudios p{
-font-size: 20px;
+
+#experiencia-estudios p {
+    font-size: 20px;
 }
+
 #estudios {
-    background-color:#027069;
-    color:#EFFAFD;
+    background-color: #027069;
+    color: #EFFAFD;
     padding: 0px 20px 100px 20px;
     border: solid 1px #EFFAFD;
-  
+
 }
-#experiencia{
-    background-color:#027069;
-    color:#EFFAFD;
+
+#experiencia {
+    background-color: #027069;
+    color: #EFFAFD;
     padding: 0px 20px 100px 20px;
     border: solid 1px #EFFAFD;
 }
 
-#panel1, #flip1 {
+#panel1,
+#flip1 {
     padding: 5px;
     text-align: center;
-    
-  }
-  
-  #panel1 {
-    padding: 50px;
-    display: none;
-  }
 
-  #panel2, #flip2 {
-    padding: 5px;
-    text-align: center;
-    
-  }
-  
-  #panel2 {
+}
+
+#panel1 {
     padding: 50px;
     display: none;
-  }
+}
+
+#panel2,
+#flip2 {
+    padding: 5px;
+    text-align: center;
+
+}
+
+#panel2 {
+    padding: 50px;
+    display: none;
+}
+
 /*Posicionamiento de la pagina portfolio*/
-#contenedoresPortfolio{
-display: flex;
-flex-direction: row;
+#contenedoresPortfolio {
+    display: flex;
+    flex-direction: row;
 }
-#contenedoresPortfolio img{
+
+#contenedoresPortfolio img {
     width: 100%;
     height: auto;
 
 }
-#contenedorPortfolio1{
 
-border: 3px solid #027069;
-margin-right: 60px;
+#contenedorPortfolio1 {
+
+    border: 3px solid #027069;
+    margin-right: 60px;
 
 }
-#contenedorPortfolio2{
-   
+
+#contenedorPortfolio2 {
+
     border: 3px solid #027069;
     margin-right: 60px;
 }
-#contenedorPortfolio3{
-    
+
+#contenedorPortfolio3 {
+
     border: 3px solid #027069;
     margin-right: 60px;
 }
-#portfolio h1{
-    font-size: 80px; 
+
+#portfolio h1 {
+    font-size: 80px;
     padding-top: 150px;
     color: #027069;
 }
+
 .divTexto {
     padding-right: 10px;
     text-align: justify;
@@ -167,47 +187,61 @@ margin-right: 60px;
 
 /*hacemos el slider de fotos y lo posicionamos*/
 
-#valores h2{
-    font-size: 80px; 
+#valores h2 {
+    font-size: 80px;
     padding-top: 40px;
     color: #027069;
 }
-#sliderFrame {
-width: 1920px;
-height: auto;
-margin: 50px auto 0;
-overflow: hidden;
-padding-left: 250px;
-}
-#sliderFrame ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
 
-    animation: slide 16s infinite alternate ease-in-out;
+.valores{
+    min-height: 100vh;
+display: grid;
+place-items: center;
 }
 
-#sliderFrame li {
-    list-style: none;
+.slides{
+    height: 720px;
     width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-#sliderFrame img {
-    width: 60%;
+.slide{
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    inset: 0;
+    animation: slide-show 12s infinite;
 }
 
-@keyframes slide {
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
+.slide2{
+    animation-delay: 4s;
+}
 
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
+.slide3{
+    animation-delay: 8s;
+}
 
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
+.slide img{
+   height: auto;
+   width: auto;
+}
 
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+@keyframes slide-show{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%,
+    30%{
+        opacity: 1;
+        scale: 1.03;
+    }
+    50%{
+        opacity: 0;
+    }
 }
 
 /*SKILLS*/
@@ -218,149 +252,156 @@ padding-left: 250px;
 
 }
 
-.skillsRow  img{
-  width: 15px;
+.skillsRow img {
+    width: 15px;
 }
 
 #skills {
-   
-h1{
-    font-size: 80px; 
-    margin-bottom: 100px;
-   padding-top: 40px;
-    color: #027069;
-}
-h2{
-    font-size: 40px;
-    color: #027069;
-    margin-bottom: 10px;
-}
-p{
-    font-size: 18px;
-    
-}
-li{
-    font-size: 18px;
-    
-}
+
+    h1 {
+        font-size: 80px;
+        margin-bottom: 100px;
+        padding-top: 40px;
+        color: #027069;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: #027069;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+
+    }
+
+    li {
+        font-size: 18px;
+
+    }
 }
 
-  /*FORMULARIO*/
-  
-input{
-    background-color: #fbfbfb; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #027069; 
-    margin-top: 10px;  
+
+/*FORMULARIO*/
+
+#contacto input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #027069;
+    margin-top: 10px;
     padding-left: 10px;
-    margin-bottom: 20px; 
-  }
-  
-  
-  textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #027069; 
-    margin-top: 10px;  
+    margin-bottom: 20px;
+}
+
+
+#contacto textarea{
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #027069;
+    margin-top: 10px;
     padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }
-  
-  
-  label{
-    display: block; 
-    float: center;  
-  }
-  
-  
-  button{
-    height: 45px; 
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+#contacto label{
+    display: block;
+    float: center;
+}
+
+
+#contacto button{
+    height: 45px;
     padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     text-transform: uppercase;
-    background-color: #027069; 
-    border-color: #027069; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
+    background-color: #027069;
+    border-color: #027069;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
     cursor: pointer;
-    color: #EFFAFD; 
-  }
-  
-  span{
-    color: #027069; 
-  }
-  
-  
-  .aviso{
-    font-size: 13px;  
-    color: #0e0e0e;  
-  }
+    color: #EFFAFD;
+}
 
-  ::-webkit-input-placeholder {
+span{
+    color: #027069;
+}
+
+
+.aviso{
+    font-size: 13px;
+    color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
     color: #a8a8a8;
-   }
-   
-   
-   ::-webkit-textarea-placeholder {
+}
+
+
+::-webkit-textarea-placeholder {
     color: #a8a8a8;
-   }
-   
-   
-   .formulario input:focus{
-     outline:0;
-     border: 1px solid #97d848;
-   }
-   
-   
-   .formulario textarea:focus{
-     outline:0;
-     border: 1px solid #97d848;
-   }
-   
-   #contacto{
+}
+
+
+.formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+
+#contacto{
     text-align: center;
-   }
+}
 
-   /*FOOTER*/
-   footer {
-   
+/*FOOTER*/
+footer {
+
     color: #256FD0;
     width: 100%;
     padding: 20px;
     margin-top: 50px;
     display: flex;
     align-items: center;
-    
+
 }
+
 .footer-logos{
-margin-left: 150px;
+    margin-left: 150px;
 }
 
 .footer-logos img {
     height: 50px;
-    
+
 }
+
 .footer-text {
     flex-grow: 1;
     text-align: center;
 }
+
 .footer-text a {
     color: #027069;
     text-decoration: none;
 }
+
 .footer-text a:hover {
     text-decoration: underline;
 }
-
